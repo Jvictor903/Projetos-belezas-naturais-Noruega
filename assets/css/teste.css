@@ -1,0 +1,40 @@
+body{
+    background-image: url(/assets/images/pexels-francesco-ungaro-409127.jpg);
+   background-size:cover ;
+   background-repeat: no-repeat;   
+}
+
+
+  form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input, textarea, button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    background-color: #48ff00;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #00b31e;
+  }
+
