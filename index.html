@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/teste.css">
     <title>Bem vindo a Noruega</title>
 </head>
 <body class="paginacentral">
@@ -11,7 +12,6 @@
         <h1>Bem vindo a Noruega</h1>
         <nav class="subtitle">
             <ul>
-                <li><a href="/pages/Feedback.html">Conte nós como foi sua experiencia</a></li>
                 <li><a href="/pages/Belezas.html">Belezas da Noruega</a></li>
                 <li><a href="/pages/Dicas.html">Dicas para turistas</a></li>
             </ul>
@@ -26,13 +26,36 @@
         <ul><p>A Noruega é um país escandinavo situado na região nórdica da Europa, conhecido por sua paisagem deslumbrante, que inclui montanhas, lagos e fiordes profundos. Com uma população de cerca de 5,4 milhões de habitantes, Oslo é a capital e maior cidade. A economia norueguesa é forte e diversificada, com o petróleo e o gás natural como principais pilares, tornando a Noruega um dos maiores exportadores de petróleo do mundo. A cultura do país é rica e valoriza a igualdade de gênero, a música folclórica e a literatura, tendo produzido escritores renomados como Henrik Ibsen. Governada como uma monarquia constitucional e uma democracia parlamentar, a Noruega apresenta uma alta qualidade de vida, com um sistema de saúde e educação eficazes. O turismo prospera devido à natureza espetacular e às atividades ao ar livre, como caminhadas e esqui. O clima é variável, com invernos rigorosos e verões agradáveis, e o país é frequentemente classificado entre os melhores lugares para se viver, graças ao seu desenvolvimento humano e bem-estar social.
         </p></ul>
     </div>
-    
+
+    <button onclick="esconde('conteudo')">Ocultar</button>
+    <button onclick="mostra('conteudo')">Saiba mais</button>
+
+<div id="conteudo">
+    A Noruega é um país localizado no norte da Europa, conhecido por sua impressionante beleza natural, marcada por fiordes, montanhas e geleiras. Faz parte da região escandinava e tem uma das maiores qualidades de vida do mundo, com um sistema de bem-estar social robusto e uma economia próspera baseada em recursos naturais, como petróleo e gás, além de energia renovável.
+Sua capital, Oslo, é um centro cultural e econômico, enquanto cidades como Bergen e Tromsø oferecem rica história e acesso a paisagens deslumbrantes. A Noruega também é reconhecida por sua democracia estável, altos índices de igualdade e compromisso com a sustentabilidade ambiental.
+</div>
+
     <div>
         <ul><h2>Curiosidades sobre a Noruega</h2></ul>
         <ul><li>Túneis águaticos: Na Noruega, túneis aquáticos como o Túnel Subaquático de Laerdal (24,5 km), um dos mais longos do mundo, conectam fiordes e facilitam o transporte em áreas montanhosas, superando desafios técnicos relacionados à pressão da água e geologia local, melhorando a acessibilidade e segurança nas estradas.</li></ul>
         <ul><li>Igualdade de Gênero: A Noruega é reconhecida como um dos países mais igualitários do mundo, com alta representação feminina na força de trabalho e em cargos de liderança, como exemplificado pela ex-primeira-ministra Gro Harlem Brundtland; o governo norueguês promove políticas sociais que facilitam a conciliação entre vida profissional e familiar, contribuindo para um ambiente mais igualitário e oportunidades iguais para todos os gêneros.</li></ul>
         <ul><li>Cultura Viking: A Noruega tem uma rica herança viking, e muitos locais históricos, museus e festivais celebram essa cultura. O Museu Viking de Oslo, por exemplo, exibe barcos vikingos originalmente usados para navegar e explorar, além de artefatos que oferecem uma visão da vida viking.</li></ul>
     </div>
+
+    <div>
+        <div><h3 id="feedbacktxt">Deixe seu feedback </h3></div>
+        <form id="feedbackForm">
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Mensagem:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">Enviar Feedback</button>
+        </form>
+        <div id="feedbackMessage" style="margin-top:10px; color:green;"></div> 
+    </div>
+    
 
     <footer>
         <a href="https://github.com/Acfaeir" target="_blank" rel="noopener noreferrer">
@@ -43,7 +66,7 @@
                 <img src=".//assets/images/icons8-instagram.svg">
                 <p>Alan</p>
             </a>
-
+            
             <a href="https://github.com/Jvictor903" target="_blank" rel="noopener noreferrer">
                 <img src="/assets/images/iconmonstr-github-1.svg">
                 <p>Jose</p>
@@ -53,6 +76,9 @@
                 <p>José</p>
             </a>
 
-    </footer>
+    </footer> 
+    <script src="/assets/js/teste.js"></script>
+    <script src="/assets/js/botao.js"></script>
+        
 </body>
 </html>
