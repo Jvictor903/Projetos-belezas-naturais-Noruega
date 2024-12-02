@@ -9,19 +9,9 @@ document.getElementById("feedbackForm").addEventListener("submit", function(even
       alert("Por favor, preencha todos os campos.");
       return;
   }
-
-  
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
-      alert("Por favor, insira um e-mail válido.");
-      return;
-  }
-
-  
   const feedbackMessage = document.getElementById("feedbackMessage");
   feedbackMessage.innerText = "Obrigado pelo feedback!";
   feedbackMessage.style.color = "green";
 
-  
   document.getElementById("feedbackForm").reset();
 });
